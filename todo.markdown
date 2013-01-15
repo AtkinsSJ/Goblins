@@ -25,3 +25,18 @@
 	* Trees -> use for fuel
 * Pathfinding!!!!
 * Saving and loading!
+
+
+## Main
+* Holds game state
+* Function to 'Start Game'
+* Function to 'Load Game'
+* Function to 'Save Game'
+	* World Map
+		* Locations of places
+		* Tiles
+		* Raiding parties
+	* Game map
+		* All goblins' state
+		* All buidlings' state
+		* Resource levels

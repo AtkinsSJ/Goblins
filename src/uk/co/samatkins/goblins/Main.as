@@ -26,7 +26,7 @@ package uk.co.samatkins.goblins
 			FP.world = new MenuWorld;
 			FP.volume = 0.5;
 			
-			//FP.console.enable();
+			FP.console.enable();
 			FP.console.toggleKey = Key.F1;
 		}
 		

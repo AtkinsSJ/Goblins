@@ -40,7 +40,7 @@ package uk.co.samatkins.goblins.menu
 			super.update();
 			
 			if (Input.pressed(Key.SPACE)) {
-				FP.world = (FP.engine as Main).getGameWorld();
+				FP.world = (FP.engine as Main).getMapWorld();
 			}
 		}
 		
