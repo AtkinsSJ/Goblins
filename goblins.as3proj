@@ -4,7 +4,7 @@
   <output>
     <movie outputType="Application" />
     <movie input="" />
-    <movie path="bin\ld25.swf" />
+    <movie path="bin\goblins.swf" />
     <movie fps="30" />
     <movie width="800" />
     <movie height="600" />
@@ -40,7 +40,7 @@
     <option linkReport="" />
     <option loadExterns="" />
     <option staticLinkRSL="True" />
-    <option additional="-frame start uk.co.samatkins.ld25.Main" />
+    <option additional="-frame start uk.co.samatkins.goblins.Main" />
     <option compilerConstants="" />
     <option minorVersion="" />
   </build>
@@ -70,7 +70,7 @@
   </library>
   <!-- Class files to compile (other referenced classes will automatically be included) -->
   <compileTargets>
-    <compile path="src\uk\co\samatkins\ld25\Preloader.as" />
+    <compile path="src\uk\co\samatkins\goblins\Preloader.as" />
   </compileTargets>
   <!-- Paths to exclude from the Project Explorer tree -->
   <hiddenPaths>

@@ -5,8 +5,9 @@ package uk.co.samatkins.goblins.menu
 	import net.flashpunk.FP;
 	import net.flashpunk.utils.Input;
 	import net.flashpunk.utils.Key;
-	import uk.co.samatkins.ld25.game.GameWorld;
+	import uk.co.samatkins.goblins.game.GameWorld;
 	import net.flashpunk.graphics.Image;
+	import uk.co.samatkins.goblins.Main;
 	
 	/**
 	 * ...
@@ -39,7 +40,7 @@ package uk.co.samatkins.goblins.menu
 			super.update();
 			
 			if (Input.pressed(Key.SPACE)) {
-				FP.world = new GameWorld();
+				FP.world = (FP.engine as Main).getGameWorld();
 			}
 		}
 		

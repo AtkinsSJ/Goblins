@@ -10,7 +10,7 @@ package uk.co.samatkins.goblins
 	{
 		// Change these values
 		private static const mustClick:Boolean = false;
-		private static const mainClassName:String = "uk.co.samatkins.ld25.Main";
+		private static const mainClassName:String = "uk.co.samatkins.goblins.Main";
 		
 		private static const BG_COLOR:uint = 0x000000;
 		private static const FG_COLOR:uint = 0xFFFFFF;
