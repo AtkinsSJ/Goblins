@@ -21,6 +21,8 @@ package uk.co.samatkins.goblins.map
 		
 		public function MapWorld() 
 		{
+			camera.y = -28;
+			
 			terrain = new Tilemap(MAPTILES_PNG, MAPTILE_SIZE * TILES_W, MAPTILE_SIZE * TILES_H, MAPTILE_SIZE, MAPTILE_SIZE);
 			addGraphic(terrain);
 			setTerrain();

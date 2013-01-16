@@ -98,6 +98,22 @@
 		}
 		
 		/**
+		 * The x position of the mouse relative to the camera
+		 */
+		public static function get mouseCameraX():int
+		{
+			return FP.screen.mouseX + FP.world.camera.x;
+		}
+		
+		/**
+		 * The y position of the mouse relative to the camera
+		 */
+		public static function get mouseCameraY():int
+		{
+			return FP.screen.mouseY + FP.world.camera.y;
+		}
+		
+		/**
 		 * Defines a new input.
 		 * @param	name		String to map the input to.
 		 * @param	keys		The keys to use for the Input.
