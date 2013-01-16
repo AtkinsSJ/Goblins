@@ -13,8 +13,8 @@ package uk.co.samatkins.goblins.map
 		[Embed(source = "../../../../../../assets/maptiles.png")] private static const MAPTILES_PNG:Class;
 		
 		public static const MAPTILE_SIZE:uint = 16;
-		public static const TILES_W:uint = 10;
-		public static const TILES_H:uint = 10;
+		public static const TILES_W:uint = 25;
+		public static const TILES_H:uint = 17;
 		
 		private var terrain:Tilemap;
 		private var terrainGrid:Grid;
@@ -25,7 +25,9 @@ package uk.co.samatkins.goblins.map
 			addGraphic(terrain);
 			setTerrain();
 			terrainGrid = terrain.createGrid([1]);
-			addMask(terrainGrid, "water");
+			addMask(terrainGrid, "obstructed");
+			
+			populate();
 		}
 		
 		public function setTerrain():void {
@@ -45,6 +47,17 @@ package uk.co.samatkins.goblins.map
 			// TODO: Accept input
 			
 			// Add some towns and things
+			for (var i:int = 0; i < 5; i++) 
+			{
+				var x:int = Math.floor(Math.random() * TILES_W),
+					y:int = Math.floor(Math.random() * TILES_H);
+				if (terrainGrid.getTile(x, y)) {
+					i--;
+				} else {
+					add(new Location(x, y, "village"));
+					terrainGrid.setTile(x, y, true);
+				}
+			}
 		}
 		
 	}
