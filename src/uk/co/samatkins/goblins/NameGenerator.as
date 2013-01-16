@@ -27,7 +27,7 @@ package uk.co.samatkins.goblins
 				placeNames.end = lines[1].split(",");
 			}
 			
-			return placeNames.start[Random.randomIndex(placeNames.start)] + placeNames.end[Random.randomIndex(placeNames.end)];
+			return Random.fromArray(placeNames.start) + Random.fromArray(placeNames.end);
 		}
 	}
 

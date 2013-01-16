@@ -10,8 +10,8 @@ package uk.co.samatkins.goblins
 			return Math.floor(Math.random() * (max - min)) + min;
 		}
 		
-		public static function randomIndex(arr:Array):int {
-			return randomInt(0, arr.length);
+		public static function fromArray(arr:Array):* {
+			return arr[randomInt(0, arr.length)];
 		}
 		
 	}
